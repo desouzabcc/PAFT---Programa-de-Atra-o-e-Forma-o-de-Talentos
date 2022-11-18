@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+            <title>hotel idis - Pagamento</title>
+    </head>
+    <body>
+        <h1>Idis</h1><h2>Hotel</h2>
+        <form action="../Hotel2/pagamento.html" method="post">
+            <p>Checkout</p>
+            <div>
+                <label for="cpf">CPF:</label>
+            </div>
+            <div>
+                <input type="text" id="consumo_cpf" name="consumo_cpf">
+            </div>
+            <div>
+                <label for="num_reserva">Numero da Reserva:</label>
+            </div>
+            <div>
+                <input type="text" id="num_reserva" name="num_reserva">
+            </div>
+            <div>
+                <label for="consumot">Consumo Total:</label>
+            </div>
+            <div>
+                <input type="number" id="consumot" name="consumot" readonly value="2000">
+            </div>
+            <div>
+                <label for="diariast">Diárias:</label>
+            </div>
+            <div>
+                <input type="text" id="diariast" name="diariast" readonly value="1000">
+            </div>
+            <div>
+                <label for="total">Valor Total:</label>
+            </div>
+            <div>
+                <input type="text" id="total" name="total" readonly value="3000">
+            </div><br><br>
+            <div>
+                <input type="submit" value="Efetuar pagamento">
+            </div>
+            <div>
+                <a href="opcoes.html" target="_self">
+                    <img src="../Hotel/img/voltar.png" height="30" width="50" />
+                </a>
+            </div>
+        </form>
+    </body>
+</html>

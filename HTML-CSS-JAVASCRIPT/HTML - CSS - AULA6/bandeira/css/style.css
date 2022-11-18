@@ -1,0 +1,40 @@
+body{
+margin-top: 50px;
+margin-left: 50px;
+background: silver;
+}
+h1{
+text-align: center;
+}
+.vertical{
+    display: flex;
+    flex-direction: row wrap;
+}
+.vertical div{
+    width: 287px;
+    height: 500px;
+}
+div{
+    width: 900px;
+    height: 200px;
+}
+.preto{
+    background-color: black;
+    border: 10px solid black;
+}
+.vermelho{
+    background-color: red;
+    border: 10px solid red;
+}
+.amarelo{
+    background-color: goldenrod;
+    border: 10px solid goldenrod;
+}
+.azul{
+    background-color: blue;
+    border:10px solid blue;
+}
+.branco{
+    background-color: white;
+    border:10px solid white;
+}

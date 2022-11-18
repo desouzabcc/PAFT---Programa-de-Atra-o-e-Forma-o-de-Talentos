@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <title>hotel idis - Checkout</title>
+    </head>
+    <body>
+        <h1>Idis</h1>
+        <h2>Hotel</h2>
+        <form action="/confirma_pagamento.html" method="post">
+            <p>Pagamento</p>
+            <div>
+                <label for="cpf">CPF:</label>
+            </div>
+            <div>
+                <input type="text" id="consumo_cpf" name="consumo_cpf">
+            </div>
+            <div>
+                <label for="total">Valor Total:</label>
+            </div>
+            <div>
+                <input type="text" id="total" name="total" readonly value="3000">
+            </div>
+            <div>
+                <label for="paga_tipo">Forma de Pagamento:</label>
+            </div>
+            <div>
+                <select id="paga_tipo" name="paga_tipo" size="1" required>
+                    <option value="dinheiro">Dinheiro</option>
+                    <option value="pix">PIX</option>
+                    <option value="debito">Débito</option>
+                    <option value="credito">Crédito</option>
+                </select>
+            </div><br><br>
+            <div>
+                <input type="submit" value="Confirmar Pagamento">
+            </div>
+            <div>
+                <a href="checkout.html" target="_self">
+                    <img src="../Hotel/img/voltar.png" height="30" width="50" />
+                </a>
+            </div>
+        </form>
+    </body>
+</html>

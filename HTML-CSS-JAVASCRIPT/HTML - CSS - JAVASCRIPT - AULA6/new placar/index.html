@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../placar/bootstrap/css/bootstrap.min.css" type="text/css" media="screen" />
+        <script type="text/javascript" src="../placar/bootstrap/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="../placar/js/main.js"></script>
+        <title>Placar</title>
+    </head>
+    <body>
+        <nav class="navbar bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand">PLACAR ELETRÔNICO</a>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Busca</button>
+                </form>
+            </div>
+        </nav>
+        <div class="container px-4 text-center" style="margin-top:30px;">
+            <div class="row gx-5">
+                <div class="col-5">
+                    <div class="p-5 border bg-light display-2" id="casa">0</div>
+                </div>
+                <div class="p-5 border bg-light col-2 display-2">X</div>
+                <div class="col-5">
+                    <div class="p-5 border bg-light display-2" id="visitante">0</div>
+                </div>
+            </div>
+            <div class="row gx-5">
+                <div class="col-5">
+                    <div class=" border bg-light lead">Jogador 1</div>
+                </div>
+                <div class=" col-2 lead"></div>
+                <div class="col-5">
+                    <div class=" border bg-light lead">Jogador 2</div>
+                </div>
+            </div>
+        </div>
+        <p class="lead" style="padding-left:130px;padding-top:30px;">
+            ***Use os botões para marcar o placar!
+        </p>
+        <div class="container px-4 text-center">
+            <div class="row gx-5">
+                <div class="col-5">
+                    <div class="p-5 border bg-light" id="partida">
+                        <label><h5>Partida de :</h5></label>
+                        <select class="form-select" aria-label="Default select example" id="partida" center name="placar_maximo" id="placar_maximo">
+                            <option value="" selected></option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container px-4 text-center">
+            <div class="row gx-5">
+                <div class="col">
+                    <div class="p-5 border bg-light display-6" id="partida">
+                        <button type="button" class="btn btn-primary btn-lg" name="jogador1" id="jogador1" onclick="jogada(1)">Jogador 1</button>
+                        <button type="button" class="btn btn-primary btn-lg" name="jogador2" id="jogador2" onclick="jogada(2)" style="margin-left:120px;">jogador 2</button>
+                        <button type="button" class="btn btn-primary btn-lg" style="margin-left:120px;" name="reset" id="reset" onclick="zerar()">Reset</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

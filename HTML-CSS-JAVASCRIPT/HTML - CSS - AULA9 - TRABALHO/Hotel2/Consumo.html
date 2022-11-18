@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <title>hotel idis - Consumo</title>
+    </head>
+    <body>
+        <h1>Idis</h1>
+        <h2>Hotel</h2>
+        <form action="/confirma_consumo.html" method="post">
+            <div>
+                <label for="local">Local:</label>
+            </div>
+            <div>
+                <select id="local" name="local" size="1" required>
+                    <option value="none"></option>
+                    <option value="quarto">Serviço de Quarto</option>
+                    <option value="lavanderia">Lavanderia</option>
+                    <option value="piscina">Piscina</option>
+                    <option value="restaurante">Restaurante</option>
+                    <option value="outros">Diversos</option>
+                </select>
+            </div>
+            <div>
+                <label for="data">Data do Consumo:</label>
+            </div>
+            <div>
+                <input type="date" id="data" name="data" required>
+            </div>
+            <div>
+                <label for="item">Item:</label>
+            </div>
+            <div>
+                <select id="local" name="local" size="1" required>
+                    <option value="none"></option>
+                    <option value="bebida">Bebida</option>
+                    <option value="comida">Comida</option>
+                    <option value="roupa">Roupas de cama</option>
+                    <option value="outros">Outros</option>
+                </select>
+            </div>
+            <div>
+                <label for="quantidade">Quantidade Consumida</label>
+            </div>
+            <div>
+                <input type="number" id="quantidade" name="quantidade" required>
+            </div>
+            <div>
+                <label for="obs">Observações:</label>
+            </div>
+            <div>
+                <textarea id="obs" name="obs" required rows="5"></textarea>
+            </div>
+            <div><input type="submit" value="Salvar"></div>
+            <div><a href="opcoes.html" target="_self"><img src="../Hotel/img/voltar.png" height="30" width="50" /></a></div>
+        </form>
+    </body>
+</html>

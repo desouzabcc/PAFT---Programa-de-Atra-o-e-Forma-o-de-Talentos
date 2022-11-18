@@ -1,0 +1,25 @@
+h3{
+    color:#008088;
+}
+
+h2{
+    color:magenta;
+}
+p{
+    color:white;
+    background: black;
+}
+
+button{
+    color:red;
+    background: pink;
+}
+h1{
+    font-family:monospace;
+    text-align:center;
+    font-size: 40px;
+    text-transform: capitalize;
+    font-weight: 100px;
+    letter-spacing: 20px;
+    background-color: peru;
+}

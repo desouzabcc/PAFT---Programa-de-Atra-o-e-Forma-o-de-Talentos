@@ -1,0 +1,34 @@
+body{
+    background-color: #F5F5DC;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1em;
+    text-align: center;
+    text-justify: 1em;
+}
+div{
+    padding: 10px;
+
+}
+h1{
+    font-family: 'Arial', sans-serif;
+    text-align:center;
+    font-size: 3em;
+}
+.img_direita{
+    float: right;
+    margin-left: -10em;
+    margin-right: 12em;
+}
+
+h2{
+    font-family: 'Arial', sans-serif;
+    text-align:center;
+    font-size: 2em;
+}
+
+h3{
+    font-family: 'Arial', sans-serif;
+    text-align:center;
+    font-size: 1em;
+}
+

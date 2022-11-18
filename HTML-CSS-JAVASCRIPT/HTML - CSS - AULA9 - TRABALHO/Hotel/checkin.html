@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <title>hotel idis - Checkin</title>
+</head>
+<body>
+    <h1>Idis</h1><h2>Hotel</h2>
+    <form action="/confirma_chekin.html" method="post">
+        <p>Checkin</p>
+        <fieldset>
+            <div><label for="consumo_cpf">CPF:</label></div>
+            <div><input type="text" id="consumo_cpf" name="consumo_cpf"></div>
+            <div><label for="num_reserva">Número da Reserva:</label></div>
+            <div><input type="number" id="num_reserva" name="num_reserva"></div>
+            <div><label for="num_quarto">Numero do Quarto:</label></div>
+            <div><input type="number" id="num_quarto" name="num_quarto"></div>
+            <div><label for="tipo_quarto">Tipo do Quarto:</label></div>
+            <div>
+                <select id="tipo_quarto" name="tipo_quarto" size="1" aria-readonly="readonly">
+                    <option value="solteiro">Solteiro</option>
+                    <option value="casal">Casal</option>
+                    <option value="familia">Família</option>
+                    <option value="presidencial">Presidencial</option>
+                </select>
+            </div>
+            <div><label for="adaptado">Quarto com acessibilidade:</label></div>
+            <div>
+                <select id="adaptado" name="adaptado" size="1" aria-readonly="readonly">
+                    <option value="sim">Sim</option>
+                    <option value="nao">Não</option>
+                </select>
+            </div>
+            <div><label for="data_entrada">Data de Entrada:</label></div>
+            <div><input type="date" id="data_entrada" name="data_entrada" readonly value="30/12/2022"></div>
+            <div><label for="data_saida">Data de Saída:</label></div>
+            <div><input type="date" id="data_saida" name="data_saida" readonly value="1000"></div>
+        </fieldset>
+        <fieldset><div><input type="submit" value="Abertura de Conta"></div></fieldset>
+        <fieldset>
+            <div><a href="opcoes.html" target="_self"><img src="../Hotel/img/voltar.png" height="30" width="50" /></a></div>
+        </fieldset>
+    </form>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <form action="resul.html" method="post"><br />
+            <fieldset>
+                <h1>Reserva de Hotel</h1>
+            </fieldset>
+            <fieldset>
+                <label> Nome: </label>
+                <input type="text" id="nome" placeholder="Nome Completo" name="nome"><br />
+                <label> Data de Nascimento: </label>
+                    <input type="date"  id="nascimento" placeholder="Data de Nascimento" name="nascimento"><br />
+                <label> Telefone: </label>
+                    <input type="tel"  id="telefone" placeholder="Telefone" name="telefone"><br />
+                <label> Endereço: </label>
+                    <input type="endereco" id="endereco" placeholder="Endereço" name="endereco"><br />
+            </fieldset>
+            <fieldset>
+                <label> Numero de Fidelidade: </label>
+                    <input type="number" id="fidelidade" placeholder="Fidelidade" name="fidelidade"><br />
+                <label> Data de Entrada: </label>
+                    <input type="date"  id="entrada" placeholder="Data de Entrada" name="entrada"><br />
+                <label> Tipo de Viagem: </label>
+                    <input type="viagem" id="tipo" placeholder="Tipo de Viagem" name="tipo"><br />
+                <label> Número de Noites: </label>
+                    <input type="number" id="número" placeholder><br />
+            </fieldset>
+            <fieldset>
+                <label> Tipo de Quarto: </label>
+                <input type="radio" id="standard" name="tpQuarto" value="Standard">
+                <label for="standard"> Standard</label>
+                <input type="radio" id="luxo" name="tpQuarto" value="Luxo">
+                <label for="luxo"> Luxo </label>
+                <input type="radio" id="super" name="tpQuarto" value="Super Luxo">
+                <label for="super"> </label>Super Luxo </label><br/>
+            </fieldset>
+            <fieldset>
+                <label> Número de Pessoas: </label>
+                    <input type="number" id="pessoas"><br />
+                <label> Número de Crianças: </label>
+                    <input type="number" id="crianças"><br />
+            </fieldset>
+            <fieldset>
+                    <label> Requerimento Especiais: </label>
+                    <textarea id="requerimento" name="requerimento" rows="10" cols="80"></textarea><br  />
+            </fieldset>
+            <fieldset>
+                    <label for="pagament"> Escolha a forma de pagamento </label>
+                    <select name="pagamento" id="pagamento">
+                    <option value="debito">Débito</option>
+                    <option value="credito">Crédito</option>
+                    <option value="voucher">Voucher</option>
+                    <option value="boleto">Boleto</option>
+                </select><br />
+            </fieldset>
+            <fieldset>
+            <label> Translado: </label>
+                <input type="radio" id="sim" name="sim" value="Sim">
+                <label for="standard"> Sim</label>
+                <input type="radio" id="nao" name="nao" value="Não">
+                <label for="luxo"> Não </label>
+            </fieldset>
+        </form>
+
+    </body> 
+</html>

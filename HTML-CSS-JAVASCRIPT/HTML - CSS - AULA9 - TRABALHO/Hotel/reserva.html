@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <title>hotel idis - Reserva</title>
+</head>
+<body>
+    <h1>Idis</h1><h2>Hotel</h2>
+    <form action="/confirma_chekin.html" method="post">
+        <p>Gerar Reserva</p>
+        <fieldset>
+            <div><label for="cpf">CPF:</label></div>
+            <div><input type="text" id="cpf" name="cpf"></div>
+            <div><label for="num_reserva">Número da Reserva:</label></div>
+            <div><input type="number" id="num_reserva" name="num_reserva" readonly></div>
+            <div><label for="tipo_quarto">Tipo do Quarto:</label></div>
+            <div>
+                <select id="tipo_quarto" name="tipo_quarto" size="1" aria-readonly="readonly">
+                    <option value="solteiro">Solteiro</option>
+                    <option value="casal">Casal</option>
+                    <option value="familia">Família</option>
+                    <option value="presidencial">Presidencial</option>
+                </select>
+            </div>
+            <div><label for="adaptado">Quarto com acessibilidade:</label></div>
+            <div>
+                <select id="adaptado" name="adaptado" size="1">
+                    <option value="sim">Sim</option>
+                    <option value="nao">Não</option>
+                </select>
+            </div>
+            <div><label for="data_entrada">Data de Entrada:</label></div>
+            <div><input type="date" id="data_entrada" name="data_entrada"></div>
+            <div><label for="data_saida">Data de Saída:</label></div>
+            <div><input type="date" id="data_saida" name="data_saida"></div>
+            <div><label for="num_quarto">Numero do Quarto:</label></div>
+            <div><input type="number" id="num_quarto" name="num_quarto" readonly></div>
+        </fieldset>
+        <fieldset><div><input type="submit" value="Confirmar Reserva"></div></fieldset>
+        <fieldset>
+            <div><a href="opcoes.html" target="_self"><img src="../Hotel/img/voltar.png" height="30" width="50" /></a></div>
+        </fieldset>
+    </form>
+</div>
+</body>
+</html>

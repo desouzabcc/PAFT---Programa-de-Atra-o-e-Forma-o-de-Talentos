@@ -1,0 +1,37 @@
+O diretor da rede de Hotel Idis, deseja informatizar sua tarefa de reserva de quartos.
+Estes quartos são numerados e podem ser do tipo solteiro, casal, família e presidencial. 
+Algum desses quartos são adaptados para as pessoas portadoras de necessidades especiais.
+Na reserva de um quarto é feita por um funcionário do Hotel para um cliente que deve 
+passar o tipo de quarto escolhido, as datas e seus dados pessoais (nome, endereço, 
+nacionalidade, e-mail, telefone de contato...). Um mesmo cliente pode gerar várias 
+reservas e ele pode modificar ou cancelar suas reservas com até 24 horas antes do dia da reserva. 
+Reservas não canceladas no prazo e/ou no-show geram uma cobrança de uma diária.
+Quando um cliente chega ao hotel é realizado o check-in, onde uma conta é criada para o 
+período da hospedagem para guardar todo o consumo realizado durante ela. Uma nota fiscal com o 
+valor total é gerada no momento do check-out, onde o pagamento pode ser feito em dinheiro, pix, 
+cartão de crédito ou de débito.  
+É necessário guardar os dados de cada funcionário, que podem ser do tipo atendente, gerente, 
+limpeza, lavanderia e cozinha. 
+ 
+Desta forma, o diretor requer que você prepare uma proposta visual dos html e css que serão 
+utilizados no sistema.  
+Algumas telas que são requeridas: 
+• Tela de login; 
+• Tela de reserva; 
+• Tela de cadastro de usuário 
+• Tela de pagamento 
+ 
+Você poderá propor outras telas que você achar útil para o sistema.  
+• O sistema deverá ter pelo menos uma tela utilizando: flex-box, grid e grid-view. 
+Desafios extras: 
+• Uso de Sass (ou outro pré-compilador).  
+ 
+Pontifícia Universidade Católica do Paraná - Escola Politécnica 
+Disciplina de HTML+CSS - Professora Mark Joselli 
+Atividade: Avaliação  
+ 
+• Fazer responsivo e considerando para funcionar em mobile e tablet (media queries); 
+• Uso de google fonts; 
+• Uso de css transitions; 
+• Uso de css animations; 
+• Em uma das telas você poderá utilizar um framework de css.
