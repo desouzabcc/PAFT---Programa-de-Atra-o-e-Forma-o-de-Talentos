@@ -29,6 +29,7 @@ label .menu {
     z-index: 100;
     width: 200px;
     height: 200px;
+    background: RGBA( 222, 184, 135, 1 );
     border-radius: 50% 50% 50% 50%;
     -webkit-transition: .5s ease-in-out;
     transition: .5s ease-in-out;
@@ -69,9 +70,9 @@ label .menu {
   label input { display: none; }
   
   label input:checked + .menu {
+    box-shadow: 0 0 0 10vw RGBA( 222,184,135,1), 0 0 0 15vh RGBA(222,184,135,1);
     border-radius: 0;
-    
-}
+  }
   
   label input:checked + .menu .hamburger {
     -webkit-transform: rotate(45deg);
@@ -96,10 +97,10 @@ label .menu {
   label input:checked + .menu + ul { opacity: 1; }
   
   label ul {
-    z-index: 200;
+    z-index: 100;
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 100%;
+    left: 90%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     opacity: 0;
