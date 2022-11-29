@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Normalize -->        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Importação do CSS -->
+        <link rel="stylesheet" href="./css/style.css">
+
+        <title>PAFT</title>
+    </head>
+    <body id="home">
+
+    <!-- Menu Inicial -->
+        <div class="menu-top">
+            <span class="logo1">PAFT</span>
+            <span class="logo2">Conta</span>
+
+            <label>
+                <input type="checkbox">
+                <span class="menu"> <span class="hamburger"></span> </span>
+                <ul>
+                  <li> <a href="./index.html#home">Home</a> </li>
+                  <li> <a href="./index.html#cartoes">Cartões</a> </li>
+                  <li> <a href="./index.html#propaganda">Investimentos</a> </li>
+                </ul>
+            </label>
+        </div>
+
+    <!-- Página Inicial -->
+        <div class="mostraConta" id="relatorioConta">
+            
+            <div class="conta">
+                <div id="saldo">
+                    <h2>Saldo</h2>
+                    <h3>R$ 30000,00</h3>
+                </div>
+                <div id="limite">
+                    <h2>Limite</h2>
+                    <h3>R$ 90000,00</h3>
+                </div>
+            </div>
+            
+            <div class="conta">
+                <div id="extrato">
+                    <h2><a href="#mostraExtrato">Extrato</a></h2>
+                </div>
+                <div id="deposito">
+                    <h2>Depósito</h2>
+                </div>
+                <div id="transferencia">
+                    <h2>Tranferência</h2>
+                </div>
+                <div id="cartao">
+                    <h2>Cartão de Crédito</h2>
+                </div>
+                <div id="emprestimo">
+                    <h2>Empréstimo</h2>
+                </div>
+                <div id="pagamento">
+                    <h2>Pagamento</h2>
+                </div>
+            </div>
+        </div>
+
+    <!--Extrato da conta-->
+        <div class="mostraConta" id="mostraExtrato">    
+            <div class="conta">
+                <div id="saldoAtual">
+                    <h2>Saldo Atual</h2>
+                    <h3>R$ 30000,00</h3>
+                </div>
+                <div id="Movimentacao">
+                    <h2>Movimentação</h2>
+                    <h3>Depósito: 30000,00</h3>
+                </div>
+            </div>
+        </div>
+
+    <!--Depósito da conta-->
+        <div class="mostraConta" id="mostraDeposito">    
+            <div class="conta">
+                <div id="depositoAtual">
+                    <h2>Depósito em Conta</h2>
+                    <form>
+                        <label>Qual valor deseja depositar em sua conta: </label><br>
+                        <input type="number" min="1">
+                        <button type="submit" id="valorDeposito">Depositar</button>
+                    </form>
+                </div><br><br><br><br><br><br><br>
+                <div>
+                    <h3><a href="#home">Voltar</a></h3>
+                </div>
+            </div>
+        </div>
+
+    <!--Transferência -->
+        <div class="mostraConta" id="mostraTransferencia">    
+            <div class="conta">
+                <div id="TransferenciaAtual">
+                    <h2>Tranferência</h2>
+                    <form>
+                        <label>Qual valor deseja Transferir: </label><br>
+                        <input type="number" min="1" id="valorTransferido"><br>
+                        <label>Qual é o banco: </label><br>
+                        <input type="number" min="1" id="bancoTransferido"><br>
+                        <label>Qual é o numero da Agencia: </label><br>
+                        <input type="number" min="1" id="agenciaTransferido"><br>
+                        <label>Qual é o numero da conta: </label><br>
+                        <input type="number" min="1" id="contaTransferido"><br>
+                        <label>Qual é o nome do Beneficiário: </label><br>
+                        <input type="number" min="1" id="nomeTransferido"><br>
+                        <button type="submit" id="transferirValor">Transferir</button>
+                    </form>
+                </div><br><br>
+                <div>
+                    <h3><a href="#home">Voltar</a></h3>
+                </div>
+            </div>
+        </div>
+
+    <!--Cartão de crédito -->
+        <div class="mostraConta" id="MostraCartao">
+            
+            <div class="conta">
+                <div id="saldoCompras">
+                    <h2>Crédito Utilizado</h2>
+                    <h3>R$ 4500,00</h3>
+                </div>
+                <div id="saldoRestante">
+                    <h2>Limite</h2>
+                    <h3>R$ 10500,00</h3>
+                </div>
+                <div>
+                    <h3><a href="#home">Voltar</a></h3>
+                </div>
+            </div>
+            
+            <div class="conta">
+                <div id="Compra1">
+                    <h3>Lojão do nunca &nbsp;&nbsp; R$ 500,00</h3>
+                </div>
+                <div id="compra2">
+                    <h3>Nike &nbsp;&nbsp; R$ 2100,00</h3>
+                </div>
+                <div id="compra3">
+                    <h3>Adidos.us &nbsp;&nbsp; R$ 1800,00</h3>
+                </div>
+                <div id="compra4">
+                    <h3>Mc Donalds  &nbsp;&nbsp; R$ 100,00</h3>
+                </div>
+            </div>
+        </div>
+        
+    <!--Empréstimo-->
+        <div class="mostraConta" id="mostraEmprestimo">    
+            <div class="conta">
+                <div id="emprestimoAtual">
+                    <h2>Solicitação de Empréstimo</h2>
+                    <form>
+                        <label>Qual é o valor do empréstimo: </label><br>
+                        <input type="number" min="1">
+                        <button type="submit" id="SolicitarEmprestimo">Solicitar</button>
+                    </form>
+                </div><br><br><br><br><br><br><br>
+                <div class>
+                    <div>
+                        <h3><a href="#home">Voltar</a></h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <!--Transferência -->
+        <div class="mostraConta" id="mostrapagamento">    
+            <div class="conta">
+                <div id="pagamentoAtual">
+                    <h2>Realizar Pagamentos</h2>
+                    <form>
+                        <label>Qual é o tipo de conta que deseja pagar: </label><br>
+                        <input type="number" id="TipoPagamento"><br>
+                        <label>Qual é o valor da fatura: </label><br>
+                        <input type="number" min="1" id="agenciaTransferido"><br><br><br><br>
+                        <button type="submit" id="confirmaPagamento">Confirmar pagamento</button>
+                    </form>
+                </div><br><br>
+                <div>
+                    <h3><a href="#home">Voltar</a></h3>
+                </div>
+            </div>
+        </div>
+
+        <!--Rodapé-->
+        <div class="rodape" id="rodape">
+            <img src="./img/facebook.png" alt="Link do facebook">
+            <img src="./img/instagram.png" alt="Link do instagran">
+            <img src="./img/twitter.png" alt="Link do twitter">
+            <img src="./img/youtube.png" alt="Link do youtube">
+        </div>
+        
+    </body>
+</html>
+<script src="./js/conta.js"></script>

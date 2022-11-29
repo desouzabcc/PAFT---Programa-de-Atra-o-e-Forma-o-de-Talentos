@@ -11,7 +11,7 @@
 
         <title>PAFT</title>
     </head>
-    <body>
+    <body id="home">
 
     <!-- Menu Inicial -->
         <div class="menu-top">
@@ -30,13 +30,16 @@
         </div>
 
     <!-- Página Inicial -->
-        <div class="home" id="home">
+        <div class="home">
             <div class="home-direita">
                 <h2> O mundo dos<br>investimentos<br>na palma de<br><b>sua mão!</b></h2>
                 <hr><br>
-                <label>Abra sua conta</label><br>
-                <input type="number" placeholder="Digite o seu CPF"><br>
-                <button>Continuar</button>
+                <form >
+                    <label>Acesse sua conta</label><br>
+                    <input type="number" id="inputCPF" placeholder="Digite o seu CPF" required><br>
+                    <input type="password" id="inputPassword" placeholder="Digite o sua Senha" required><br>
+                    <button type="submit" id="submitLogin">Acessar</button>
+                </form>
             </div>
 
             <div class="home-esquerda">
@@ -71,3 +74,4 @@
 
     </body>
 </html>
+<script src="./js/conta.js"></script>
