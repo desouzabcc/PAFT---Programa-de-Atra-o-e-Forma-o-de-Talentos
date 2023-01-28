@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CRUD - Contatos</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet' />
+        <script type="text/javascript" src="{{url_for('static', filename='main.js')}}"></script>
+    </head>
+    <body onload="updateList()">
+        <main>
+            <h2>Gerenciamento de contatos</h2>
+            <label for="name">Name: </label><input type="text" id="name" required>
+            <br /><br />
+            <label for="phone">Fone: </label><input type="text" id="phone" required> <br/>
+            <button onclick="createContact()" class="table1"><span class="material-symbols-outlined">add</span></button>
+            <br /><br />
+            <h2>Lista de Contatos</h2>
+            <div>
+                <table id="result"></table>
+            </div>
+        </main>
+    </body>
+</html>
